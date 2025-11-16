@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.form-container {
+    width: 40%;
+    background-color: blue;
+    padding: 30px;
+    height: 100vh;
+
+}
+.form-container h1 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label {
+   color: white; 
+   font-weight: 600;
+   font-size: 16px;
+
+}
+input , button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    color: blue;
+}
+.img-container {
+    width: 60%;
+    height: 100vh;
+    background-image: url('../images/rasm.jpg');
+}
+label span {
+    color: red;
+}
