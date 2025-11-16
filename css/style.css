@@ -4,18 +4,19 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
+/* FORM QISMI */
 .form-container {
     width: 40%;
     background-color: blue;
     padding: 30px;
     height: 100vh;
-
 }
 .form-container h1 {
     font-size: 28px;
@@ -23,33 +24,97 @@
     text-align: center;
     padding-top: 100px;
 }
+
 .form {
     width: 400px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 label {
    color: white; 
    font-weight: 600;
    font-size: 16px;
-
 }
+
 input , button{
     padding: 10px;
     border-radius: 10px;
     border: none;
     outline: none;
 }
+
 button {
     cursor: pointer;
     color: blue;
 }
+
+/* RASM QISMI */
 .img-container {
     width: 60%;
     height: 100vh;
     background-image: url('../images/rasm.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
 label span {
     color: red;
+}
+
+/* ===========================
+   RESPONSIVE
+=============================*/
+
+/* TABLET (768px dan kichik) */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .form-container {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* MOBIL (576px dan kichik) */
+@media (max-width: 576px) {
+    .form-container  {
+        background-image: url('../images/rasm.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+    .form-container h1 {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    input, button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .img-container {
+        display: none;
+    }
 }
